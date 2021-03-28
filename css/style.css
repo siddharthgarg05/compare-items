@@ -1,0 +1,120 @@
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.main-carousel {
+background: #EEE;
+}
+
+.carousel-cell {
+width: 33%;
+height: 200px;
+margin-right: 10px;
+background: #ba74b5;
+border-radius: 5px;
+counter-increment: carousel-cell;
+}
+
+.carousel-cell img { 
+    height: 30%;
+    width: 40%;
+    border: 2px dashed darkblue;
+    position: relative;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.carousel-cell .cmpBtn,.rmvBtn {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 2px 5px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.carousel-cell .cmpBtn {
+    background-color: #29aa20;
+}
+
+.carousel-cell .cmpBtn:hover {
+    background-color: #27f419;
+}
+
+.carousel-cell .cmpBtn:active {
+    background-color: #0a4605;
+}
+
+.carousel-cell .rmvBtn {
+    background-color: #be0000;
+}
+
+.carousel-cell .rmvBtn:hover {
+    background-color: #ff2222;
+}
+
+.carousel-cell .rmvBtn:active {
+    background-color: #8c0000;
+}
+
+.carousel-cell .item-specs {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    height: 50%;
+    width: 95%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #e1eae1;
+    color: #210f0f;
+    font-size: 16px;
+    padding: 7px 12px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item-specs * {
+    margin: 0;
+    padding: 0;
+}
+
+.compKey {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.compVal {
+    color: green;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    width: 25%;
+    text-align: center;    
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.table-content {
+    margin-top: 30px;
+    max-height: 300px;
+    overflow: auto;
+}
